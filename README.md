@@ -1,3 +1,3 @@
 # mddn333-Project2
  
-I've now started playing with the colours, fonts and adding various assets. I've only done the badges page and the leaderboard page, so there's still a lot of work to do, but I feel good about my progress. The main issue I'm running into is getting my grids to line up properly. Once I've sorted that though, I'll move on to making the rest of the pages
+I've worked on the leaderboard page and edited the css file so now the pages that I've "completed" look good, but the other pages that I haven't worked on are quiote messed up. So my next stages are adding content to those and formating the html files so they look better. But I've done 3/6 of the html basic pages

@@ -53,7 +53,7 @@ main {
   text-align: left;
   background-position: 50% 50%;
   display: grid;
-  grid-gap: 25px;
+  grid-gap: 30px;
   padding-left: auto;
   padding-right: auto;
   padding-top: 25px;
@@ -74,7 +74,7 @@ section {
 
 section:nth-of-type(1) {
   grid-area: title;
-  align-items: right;
+  align-items: flex-start;
   /* justify-items: flex-end; */
 }
 
@@ -82,11 +82,12 @@ section:nth-of-type(2) {
   grid-area: summary;
   align-items: flex-start;
   justify-items: flex-start;
+  padding-bottom:30px;
 }
 
 section:nth-of-type(3) {
   grid-area: badge1;
-  grid-gap: 10px;
+  grid-gap: 15px;
   flex-direction: column;
   justify-items: center;
   display: grid;
@@ -100,7 +101,7 @@ section:nth-of-type(3) {
 
 section:nth-of-type(4) {
   grid-area: badge2;
-  grid-gap: 10px;
+  grid-gap: 15px;
   flex-direction: column;
   justify-items: center;
   display: grid;
@@ -114,7 +115,7 @@ section:nth-of-type(4) {
 
 section:nth-of-type(5) {
   grid-area: badge3;
-  grid-gap: 10px;
+  grid-gap: 15px;
   flex-direction: column;
   justify-items: center;
   display: grid;
@@ -128,7 +129,7 @@ section:nth-of-type(5) {
 
 section:nth-of-type(6) {
   grid-area: badge4;
-  grid-gap: 10px;
+  grid-gap: 15px;
   flex-direction: column;
   justify-items: center;
   display: grid;
@@ -142,7 +143,7 @@ section:nth-of-type(6) {
 
 section:nth-of-type(7) {
   grid-area: badge5;
-  grid-gap: 10px;
+  grid-gap: 15px;
   flex-direction: column;
   justify-items: center;
   display: grid;
@@ -156,6 +157,7 @@ section:nth-of-type(7) {
 
 section:nth-of-type(8) {
   grid-area: badge6;
+  grid-gap: 15px;
   flex-direction: column;
   justify-items: center;
   display: grid;
@@ -169,7 +171,7 @@ section:nth-of-type(8) {
 
 section:nth-of-type(9) {
   grid-area: badge7;
-  grid-gap: 10px;
+  grid-gap: 15px;
   flex-direction: column;
   justify-items: center;
   display: grid;
@@ -183,7 +185,7 @@ section:nth-of-type(9) {
 
 section:nth-of-type(10) {
   grid-area: badge8;
-  grid-gap: 10px;
+  grid-gap: 15px;
   flex-direction: column;
   justify-items: center;
   display: grid;
@@ -197,7 +199,7 @@ section:nth-of-type(10) {
 
 section:nth-of-type(11) {
   grid-area: badge9;
-  grid-gap: 10px;
+  grid-gap: 15px;
   flex-direction: column;
   justify-items: center;
   display: grid;
@@ -211,7 +213,7 @@ section:nth-of-type(11) {
 
 section:nth-of-type(12) {
   grid-area: badge10;
-  grid-gap: 10px;
+  grid-gap: 15px;
   flex-direction: column;
   justify-items: center;
   display: grid;
@@ -225,7 +227,7 @@ section:nth-of-type(12) {
 
 section:nth-of-type(13) {
   grid-area: badge11;
-  grid-gap: 10px;
+  grid-gap: 15px;
   flex-direction: column;
   justify-items: center;
   display: grid;
@@ -239,7 +241,7 @@ section:nth-of-type(13) {
 
 section:nth-of-type(14) {
   grid-area: badge12;
-  grid-gap: 10px;
+  grid-gap: 15px;
   flex-direction: column;
   justify-items: center;
   display: grid;
@@ -260,7 +262,7 @@ section:nth-of-type(14) {
 .title {
   grid-area: title;
   align-items: center;
-  justify-items: center;
+  /* justify-items: center; */
   display: flex;
 }
 
@@ -274,31 +276,29 @@ section:nth-of-type(14) {
 H1{ 
   line-height: auto;
   text-align: left;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   font-family: 'Lexend', sans-serif;
   font-size:100px;
   color: black;
 }
 
 H2{ 
-  line-height: auto;
-  text-align: left;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-family: 'Lexend', sans-serif;
-  font-size:50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  font-family: bilo,sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 24pt;
   color: black;
 }
 
 H3{ 
   line-height: auto;
   text-align: center;
-  padding-top: 5px;
+  padding-top: 10px;
   font-family: gimlet-display, serif;
   font-weight: 400;
   font-style: italic;
@@ -311,6 +311,7 @@ H3{
 p {
   padding-left: 10px;
   padding-right: 10px;
+  padding-top: 10px;
   text-align: center;
   font-family: bilo,sans-serif;
   font-weight: 300;
