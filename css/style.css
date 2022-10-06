@@ -6,7 +6,7 @@ body {
   width: 100vw;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 5% auto;
+  grid-template-rows: 80px auto;
   grid-template-areas: 
       "header"
       "main";
@@ -30,7 +30,7 @@ header {
   grid-area: header;
   background-color: white;
   display: grid;
-  grid-template-columns: auto 100px;
+  grid-template-columns: auto 80px;
   grid-template-rows: auto;
   grid-template-areas: 
       "aside1 nav";
@@ -40,8 +40,9 @@ nav:nth-of-type(1) {
 }
 nav:nth-of-type(2) {
   grid-area: nav;
-  margin: 5px;
-  background-color: black;
+  margin: 15px;
+  align-items: flex-end;
+  justify-items: flex-end;
 }
 
 main {
@@ -53,8 +54,8 @@ main {
   text-align: left;
   background-position: 50% 50%;
   display: grid;
-  grid-template-columns: 5% 30% 25% auto;
-  grid-template-rows: 20% 1% auto;
+  grid-template-columns: 40px 30% 25% auto;
+  grid-template-rows: 170px 80px auto;
   grid-template-areas: 
       "nothing title title title"
       "nothing subtitle subtitle subtitle"
@@ -90,6 +91,8 @@ section:nth-of-type(3) {
 section:nth-of-type(4) {
   grid-area: info;
   flex-direction: column;
+  align-items: center;
+  justify-items: center;
 }
 
 section:nth-of-type(5) {
@@ -123,7 +126,7 @@ H2{
   text-align: left;
   /* padding-top: 20px; */
   padding-bottom: 20px;
-  padding-left: 90px;
+  /* padding-left: 90px; */
   padding-right: 20px;
   /* padding-top: 10px; */
   font-family: gimlet-display, serif;
@@ -167,7 +170,7 @@ h4 {
 
 p {
   line-height: auto;
-  padding-left: 50px;
+  padding-left: 20px;
   text-align: left;
   padding-right: 10px;
   font-family: bilo,sans-serif;
