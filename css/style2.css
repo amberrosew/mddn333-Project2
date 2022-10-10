@@ -47,10 +47,8 @@ nav:nth-of-type(2) {
 
 main {
   grid-area: main;
-  background-image: url('../img/mainBuilding.png');
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: white;
   text-align: left;
   background-position: 50% 50%;
   display: grid;
@@ -71,6 +69,84 @@ main {
  /* 8 columns 4 rows*/
 section {
   display: flex;
+}
+
+@media screen and (max-width: 1080px) {
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    height: 100vh;  /*define an actual height*/
+    width: 100vw;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 5% auto;
+    grid-template-areas: 
+        "header"
+        "main";
+  }
+  header {
+    grid-area: header;
+    background-color: white;
+    display: grid;
+    grid-template-columns: auto 100px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "aside1 nav";
+  }
+  main {
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 10% 8% 20% 20% 20% 20%;
+    grid-template-areas: 
+    "title title title"
+    "summary summary summary"
+    "badge1 badge2 badge3"
+    "badge4 badge5 badge6"
+    "badge7 badge8 badge9"
+    "badge10 badge11 badge12";
+  } 
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    height: 100vh;  /*define an actual height*/
+    width: 100vw;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 5% auto;
+    grid-template-areas: 
+        "header"
+        "main";
+  }
+  header {
+    grid-area: header;
+    background-color: white;
+    display: grid;
+    grid-template-columns: auto 100px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "aside1 nav";
+  }
+  main {
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: 33% 33%;
+    grid-template-rows: 8% 8% 12% 12% 12% 12% 12% 12%; 
+    grid-template-areas: 
+    "title title"
+    "summary summary"
+    "badge1 badge2"
+    "badge3 badge4"
+    "badge5 badge6"
+    "badge7 badge8"
+    "badge9 badge10"
+    "badge11 badge12";
+  } 
 }
 
 section:nth-of-type(1) {

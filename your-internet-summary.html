@@ -19,8 +19,14 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
       <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;500&display=swap" rel="stylesheet">  <!-- Lexend font  font-family: 'Lexend', sans-serif; -->
 
+      <link rel="stylesheet" href="https://use.typekit.net/yyp0dvf.css">
+
+      <link rel="stylesheet" href="https://use.typekit.net/yyp0dvf.css">
+
+      <link rel="stylesheet" href="https://use.typekit.net/yyp0dvf.css">
+
       <!-- changhing the space between lines-->
-      <link rel="stylesheet" href = "css/style.css" >
+      <link rel="stylesheet" href = "css/leaderboard.css" >
 
 </head>
 
@@ -34,66 +40,41 @@
           <section class="fade-in"> <h1>your internet summary</h1> </section>
           <section class="fade-in"> <p style="padding-left: 38px;">a summary of your internet use in the past week</p></section>
           <section class="fade-in">
-            <br>
-            <br>
-            <h2>most used websites</h2>
-            <center> <img src="img/1st-place-badge.png" alt="1st place badge" style="width:120px; height:160px; padding-top: 30px;"> </center>
-            <br>
-            <br>
-            <center>
-            <img src="img/2nd-place-badge.png" alt="1st place badge" style="width:90px; height:90px; padding-top: 30px;"> </center>
-            <br>
-            <br>
-            <center>
-            <img src="img/3rd-place-badge.png" alt="1st place badge" style="width:90px; height:90px; padding-top: 30px;"> </center>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <h2>time spent off task:</h2>
-            <br>
-            <h3> 347 hours
-            <br>
-            <br>
-            23 minutes
-            <br>
-            <br>
-            51 seconds  </h3>
-          </section>
+            <div class="boardtitle"> <h2>most used websites: </h2> </div>
+            <div class="badge"> <img src="img/1st-place-badge.png" alt="1st place badge" 
+              style="width:120px; height:160px;"> </div>
+            <div class="name"> <h4>website 1</h4> </div>
+            <div class="time"></div>
+            <div class="badge2"> <img src="img/2nd-place-badge.png" alt="2nd place badge" 
+              style="width:90px; height:90px;"> </div>
+            <div class="name2"> <h4>website 2</h4> </div>
+            <div class="time2"></div>
+            <div class="badge3"> <img src="img/3rd-place-badge.png" alt="3rd place badge" 
+              style="width:90px; height:90px;"> </div>
+            <div class="name3"> <h4>website 3</h4> </div>
+            <div class="time3"></div>
+            </section>
+            <section> <div class="boardtitle"> <h2>time spent off task:</h2> </div>
+              <div class="badge"> <h4> 57 hours </h4></div>
+              <div class="badge2">  <h4>23 minutes</h4></div>
+              <div class="badge3"> <h4>51 seconds</h4> </div>
+              <div class="boardtitle2"> <h2 style="text-align: center;"> time online: </h2> </div>
+              <div class="time"> <div class="counter">
+                <div class="timer">
+                </div>
+                <div class="controls">
+                </div>
+            </div>
+            <script src="counter.js"></script>
+            </div> </section>
          <section class="fade-in"> 
-          <br>
-          <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <h4>Website 1</h4>
-            <h4>Website 2</h4>
-            <h4>Website 3</h4>
-            <br>
-            <br>
-            <br>
-            <br>
-            <h2 style="padding-top: 7px; padding-left: 50px;">total time online:</h2>
-            <br>
-            <h3 style="padding-left: 120px";> 347 hours
-            <br>
-            <br>
-            23 minutes
-            <br>
-            <br>
-            51 seconds  </h3>
-           </section>
-         <section class="fade-in">             
-        </section>
-         <section class="fade-in"> </section>
+          <div class="badge"> <h2>view "off task" websites</h2> </div>
+          <div class="name"> <a href="blacklisted-sites.html"> 
+            <button type="button" style="background-color:#8E78B7">view</button> 
+          </a>
+        </div>
+          
+         </section>
       </main>
   </body>
   </html>

@@ -53,12 +53,14 @@ main {
   text-align: left;
   background-position: 50% 50%;
   display: grid;
-  grid-template-columns: 40px 30% 25% auto;
-  grid-template-rows: 170px 80px auto;
+  grid-template-columns: auto;
+  grid-template-rows: 170px 80px 700px 700px;
   grid-template-areas: 
-      "nothing title title title"
-      "nothing subtitle subtitle subtitle"
-      "nothing text info button";
+      "title"
+      "subtitle"
+      "table1"
+      "table2"
+      "blacklist";
 }
 
 section {
@@ -67,6 +69,7 @@ section {
 
 section:nth-of-type(1) {
   grid-area: title;
+  padding-left: 60px;
   /* overflow: hidden; */
   align-items: center;
   justify-items: center;
@@ -76,36 +79,140 @@ section:nth-of-type(2) {
   grid-area: subtitle;
   align-items: right;
   justify-items: center;
+  padding-left: 60px;
 }
 
 section:nth-of-type(3) {
-  grid-area: text;
-  /* padding-left: 10px; */
+  grid-area: table1;
+  /* padding-left: 50px; */
   flex-direction: column;
   align-items: center;
-  justify-items: center;
+  /* justify-items: center; */
+  display: grid;
+  grid-template-rows: 120px 200px 150px 150px;
+  grid-template-columns: 30vw 30vw auto;
+  grid-template-areas: 
+    "boardtitle boardtitle boardtitle"
+    "badge name time"
+    "badge2 name2 time2"
+    "badge3 name3 time3";
 }
 
 section:nth-of-type(4) {
-  grid-area: info;
+  grid-area: table2;
+  /* padding-left: 50px; */
   flex-direction: column;
   align-items: center;
-  justify-items: center;
+  /* justify-items: center; */
+  display: grid;
+  grid-template-rows: 120px 200px 150px 150px;
+  grid-template-columns: 33vw 33vw auto;
+  grid-template-areas: 
+    "boardtitle boardtitle boardtitle2"
+    "badge name time"
+    "badge2 name2 time2"
+    "badge3 name3 time3";
 }
-
 section:nth-of-type(5) {
-  grid-area: button;
+  grid-area: blacklist;
+  padding-left: 50px;
   flex-direction: column;
-  /* align-self: center; */
-  justify-self: center;
-  padding-top: 80px;
-  /* padding-left: 3vw;
-  padding-right: 3vw; */
+  align-items: center;
+  /* justify-items: center; */
+  display: grid;
+  grid-template-rows: 120px 200px 150px 150px;
+  grid-template-columns: 37vw 33vw auto;
+  grid-template-areas: 
+    "boardtitle boardtitle boardtitle2"
+    "badge name time"
+    "badge2 name2 time2"
+    "badge3 name3 time3";
 }
 
-section:nth-of-type(6) {
-  grid-area: nothing;
-} 
+.timer{
+  line-height: auto;
+  padding-left: 10px;
+  padding-top: 200px;
+  text-align: left;
+  padding-right: 10px;
+  font-family: bilo,sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 40pt;
+  color: black;
+}
+
+.boardtitle {
+  grid-area: boardtitle;
+  display: flex;
+  padding-left: 60px;
+}
+
+.badge {
+  grid-area: badge;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.name {
+  grid-area: name;
+  display: flex;
+}
+
+.time {
+  grid-area: time;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.badge2 {
+  grid-area: badge2;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.name2 {
+  grid-area: name2;
+  display: flex;
+}
+
+.time2 {
+  grid-area: time2;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.badge3 {
+  grid-area: badge3;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.name3 {
+  grid-area: name3;
+  display: flex;
+}
+
+.time3 {
+  grid-area: time3;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.boardtitle2 {
+  grid-area: boardtitle2;
+  display: flex;
+  /* padding-left: 60px; */
+  /* padding-left: 17vw; */
+}
+
+
 
 H1{ 
   line-height: auto;
@@ -122,16 +229,11 @@ H1{
 H2{ 
   line-height: auto;
   text-align: left;
-  /* padding-top: 20px; */
-  padding-bottom: 20px;
-  /* padding-left: 90px; */
-  padding-right: 20px;
-  /* padding-top: 10px; */
   font-family: gimlet-display, serif;
   font-weight: 400;
   font-style: italic;
-  font-size: 60;
-  transform:scale(1.5,3);
+  font-size: 40px;
+  transform:scale(1,2);
   /* font-family: 'Lexend', sans-serif;
   font-size:50px; */
   color: black;
@@ -139,7 +241,7 @@ H2{
 
 h3 {
   line-height: auto;
-  padding-left: 10px;
+  /* padding-left: 10px; */
   text-align: left;
   padding-right: 10px;
   font-family: bilo,sans-serif;
@@ -153,7 +255,7 @@ h3 {
 
 h4 {
   line-height: auto;
-  padding-left: 10px;
+  /* padding-left: 10px; */
   text-align: left;
   padding-right: 10px;
   padding-top: 0px;
@@ -192,6 +294,7 @@ button {
   display: inline-block;
   font-size: 24px;
   font-family: 'Lexend', sans-serif;
+  cursor: pointer;
   /* align-self: center;
   justify-self: center; */
 }
@@ -201,9 +304,9 @@ button:hover {
   transition: 0.3s;
   filter: brightness(115%);
 }
-
-/* img {
-  padding-left: 100px;
+/* 
+img {
+  align-self: ;
 } */
       
       
