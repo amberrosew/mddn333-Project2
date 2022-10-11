@@ -1,3 +1,3 @@
-# mddn333-Project2
+# how do you use the internet
 
-I've now gone and edited the CSS files for a few of the badges so the grids (and code on the corresponding HTML page) is far more efficient. I also made it so that the counter actually functions. It does revert back everytime you refresh the page, but as it's just there to suggest that things are being tracked I'm okay with that.
+This is a speculative design prototype. It's intended purpose is to track users internet usage and display it through various points systems, leaderboards, and allow users to earn badges to represent them reaching certain milestones of internet usage. The overall purpose is to make people more aware of how they use the internet, and how much time they spend online.
